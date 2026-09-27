@@ -1,0 +1,39 @@
+CTD IJDSA FINAL FIGURE CLEANUP AUDIT
+Date: 2026-09-27
+
+SOURCE MANUSCRIPT:
+CTD_IJDSA_REVISED_MANUSCRIPT_WITH_NEW_FIGURES_2_TO_5.docx
+
+FINAL MANUSCRIPT:
+CTD_IJDSA_REVISED_MANUSCRIPT_FINAL_CLEAN_FIGURES_v2.docx
+
+AUDIT RESULTS
+1. Embedded figures: 5 PASS
+2. Figure 1 captions: exactly 1 PASS
+3. Figure 2 caption: exactly 1 PASS
+4. Figure 3 caption: exactly 1 PASS
+5. Figure 4 caption: exactly 1 PASS
+6. Figure 5 caption: exactly 1 PASS
+7. Explicit in-text references to Fig. 2–5: PASS
+8. Obsolete No Scaling + PCA95 empirical figure/caption: absent PASS
+9. Rendered manuscript: 19 pages
+10. Figures 2–5 rendered on pages 10–13 and visually inspected PASS
+11. Figure files: 600 dpi PASS
+12. No ML experiments or evidence were rerun or changed during cleanup.
+
+FIGURE FILES
+Figure_2_Interaction_Distributions.png
+Figure_3_Dataset_Heterogeneity.png
+Figure_4_Model_Ranking_Reversals.png
+Figure_5_Practical_Effect_Reversals.png
+
+SCIENTIFIC CONTENT PRESERVED
+- 2,100 evidence rows
+- 600 interaction rows
+- 900 pairwise model comparisons
+- 73 raw Scaling x Training reversals
+- 110 raw Sampling x Training reversals
+- Practical-effect counts unchanged: 44/64, 24/37, 12/9 at thresholds 0.005/0.010/0.020.
+
+NOTE
+The original figure-generation run reported that Arial was not installed in the Colab environment and therefore Matplotlib used its fallback font. The figures are readable and publication-resolution; no scientific content was altered during this cleanup. The cleanup performed here corrected manuscript duplication and cross-referencing without regenerating the empirical figures.

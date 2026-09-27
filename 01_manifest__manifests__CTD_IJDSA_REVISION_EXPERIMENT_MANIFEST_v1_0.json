@@ -1,0 +1,82 @@
+{
+  "project": "CTD IJDSA Major Revision",
+  "version": "v1.0",
+  "datasets": [
+    "breast_cancer",
+    "bank_marketing",
+    "covertype",
+    "pima_diabetes",
+    "spambase",
+    "phoneme"
+  ],
+  "models": [
+    "logistic_regression",
+    "decision_tree",
+    "random_forest",
+    "linear_svm"
+  ],
+  "seeds": [
+    42,
+    123,
+    2026,
+    7,
+    19,
+    31,
+    53,
+    71,
+    89,
+    107,
+    149,
+    173,
+    211,
+    257,
+    311
+  ],
+  "decisions": {
+    "scaling": {
+      "baseline": "standard_scaler",
+      "counterfactual": "no_scaling"
+    },
+    "sampling": {
+      "baseline": "original",
+      "counterfactual": "minority_oversampling"
+    },
+    "representation": {
+      "baseline": "all_features",
+      "counterfactual": "pca95"
+    },
+    "training_fraction": {
+      "baseline": "100_percent",
+      "counterfactual": "50_percent"
+    }
+  },
+  "principal_interaction_pairs": [
+    {
+      "decision_1": "scaling",
+      "decision_2": "training_fraction"
+    },
+    {
+      "decision_1": "sampling",
+      "decision_2": "training_fraction"
+    },
+    {
+      "decision_1": "sampling",
+      "decision_2": "representation"
+    },
+    {
+      "decision_1": "representation",
+      "decision_2": "training_fraction"
+    }
+  ],
+  "legacy_scaling_x_representation": {
+    "status": "auxiliary_only",
+    "reason": "editor identified scaling/PCA dependence"
+  },
+  "candidate_thresholds": [
+    0.005,
+    0.01,
+    0.02
+  ],
+  "primary_threshold": 0.01,
+  "expected_fits": 3240
+}

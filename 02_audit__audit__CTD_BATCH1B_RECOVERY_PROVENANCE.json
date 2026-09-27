@@ -1,0 +1,26 @@
+{
+  "type": "recovered_evidence_ledger",
+  "dataset": "bank_marketing",
+  "expected_runs": 300,
+  "recovered_runs": 300,
+  "pass_runs": 300,
+  "source": "Pasted markdown(20260926-143529).md",
+  "note": "Recovered from the archived Batch 1B production execution log. This is not claimed to be the original missing CSV byte-for-byte. Accuracy was not printed in the archived run records and is NaN. Split hashes are the prefixes printed in the archived log.",
+  "split_hash_prefixes": {
+    "42": "f0a9dd84daff9784",
+    "123": "59e8cfdd7cba1c6b",
+    "2026": "f3f4aadf135e089a",
+    "7": "adc8b1b477ba62e8",
+    "19": "2e897259a62b7211",
+    "31": "7c891d14ba68a32f",
+    "53": "99a508045c9a482a",
+    "71": "99c2c031e13fb9c8",
+    "89": "aa993ee465b666a0",
+    "107": "2b6348b82963dac9",
+    "149": "27cc9ca5a7d3e8cc",
+    "173": "37514199870052a1",
+    "211": "bd82823a9d173543",
+    "257": "0ea329537f4dd2f6",
+    "311": "332f7959b500e92b"
+  }
+}

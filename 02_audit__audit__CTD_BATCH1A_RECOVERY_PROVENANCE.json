@@ -1,0 +1,16 @@
+{
+  "recovery_type": "reconstructed_from_archived_batch_1A_execution_log",
+  "archived_log_records_parsed": 236,
+  "archived_log_tail_records_recovered_from_files_read": 64,
+  "total_records": 300,
+  "dataset": "breast_cancer",
+  "split_method": "train_test_split(index, test_size=0.20, stratify=y, random_state=seed)",
+  "split_hash_method": "SHA256(train_idx.tobytes() + test_idx.tobytes())",
+  "accuracy_values": "not present in archived execution evidence; stored as NaN",
+  "critical_cross_checks": {
+    "seed42_logistic_baseline": 0.981151,
+    "seed42_logistic_scaling_cf": 0.952638,
+    "seed42_logistic_sampling_cf": 0.944481
+  },
+  "note": "This is a recovered evidence ledger, not the original missing CSV bytes. It must be used only after the Batch 3A equivalence gate validates its split hashes and representative Macro-F1 values."
+}
